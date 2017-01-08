@@ -50,5 +50,6 @@
     mode=0644
   with_items:
     - etc/etcd/etcd.conf
+  notify: restart etcd
 
 - include: '{{etcd_init_system}}.yml'

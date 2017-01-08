@@ -1,2 +1,6 @@
 ---
 # handlers file for etcd-cluster
+- name: restart etcd
+  service:
+    name: etcd
+    state: restarted

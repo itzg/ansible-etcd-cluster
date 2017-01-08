@@ -9,7 +9,7 @@
     dest=/{{item}}
     mode=0644
   with_items:
-    - usr/lib/systemd/system/etcd.service
+    - etc/systemd/system/etcd.service
 
 - name: systemctl daemon-reload
   become: yes
